@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "4669026-GIUV Navod";
+}
+
+<head>
+    <style>
+        body{
+           background-color:palegoldenrod;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        a{
+            width: 100%;
+            background-color:mediumpurple;
+            color: white;
+            padding: 14px 50px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+<form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          
+           <a asp-area="" asp-controller="Home" asp-action="dashbord">Student</a><br /><br /><br />
+
+           <a asp-area="" asp-controller="Home" asp-action="teacher">Teacher</a><br /><br /><br />
+
+           <a asp-area="" asp-controller="Home" asp-action="registration">Registration</a>
+</form>
+</body>
